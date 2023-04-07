@@ -1,0 +1,218 @@
+:root{
+    --MainColor: aliceblue;
+    --AccentColor: rgb(253, 142, 139);
+    --HighlighColor: rgb(252, 174, 78);
+    --TextColor: black;
+}
+*{
+    font-family: Arial;
+    color: var(--TextColor);
+
+}
+body{
+background-color: var(--MainColor);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+a:visited {
+    background-color: lightblue;
+    color: gray;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+a:active {
+    background-color: hotpink;
+}
+.hero {
+    flex-basis: 100%;
+}
+button{
+    font-size: large;
+    background: var(--MainColor);
+}
+#ColorChange1{
+    font-size: smaller;
+    background-color: aliceblue;
+    color: black;
+}
+#ColorChange2{
+    font-size: smaller;
+    background-color: white;
+    color: black;
+}
+#ColorChange3{
+    font-size: smaller;
+    background-color: darkblue;
+    color: white;
+}
+button:hover{
+    font-size: large;
+    background: greenyellow;
+}
+button:focus{
+    background: aqua;
+}
+
+#banner {
+    height: auto;
+    max-width: 100%;
+}
+.main, .navbar {
+    padding: 15px;
+}
+
+.main {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: auto;
+    background: var(--HighlighColor);
+    text-align: center;
+}
+
+.navicon {
+    width: 10%;
+    height: auto;
+}
+.tacticimg{
+    width: 100%;
+    height: auto;
+}
+
+#headshot{
+    width: 100%;
+    height: auto;
+}
+.gallery{
+    width : 100%;
+    height:auto;
+}
+.articles {
+    flex-basis: 100%;
+    background: var(--AccentColor);
+}
+@media only screen and (min-width:1100px) {
+    .main, .navbar {
+        padding: 15px;
+    }
+
+    .main {
+        width: 80vw;
+        justify-content: space-evenly;
+    }
+
+    .navbar {
+        width: 10vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: 100%;
+        background: var(--HighlighColor);
+    }
+    .navicon {
+        width: 100%;
+        height: auto;
+    }
+    #headshot {
+        width: 30%;
+        height: auto;
+    }
+    .gallery{
+        width : 40%;
+        height:auto;
+    }
+    .articles {
+        flex-basis: 45%;
+        padding: 5px;
+        margin:5px;
+    }
+    .contact {
+        flex-basis: 100%;
+        padding: 5px;
+        margin:5px;
+    }
+}
+
+@media only screen and (min-width:1900px) {
+    .main, .navbar {
+        padding: 15px;
+    }
+
+    .main {
+        width:90vw;
+        justify-content: space-evenly;
+    }
+
+    .navbar {
+        width: 3vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: 100%;
+        background: var(--HighlighColor);
+    }
+    .navicon {
+        width: 100%;
+        height: auto;
+    }
+    #headshot {
+        width: 30%;
+        height: auto;
+    }
+    .articles {
+        flex-basis: 21%;
+        padding: 10px;
+        margin:10px;
+    }
+    .gallery{
+        width : 30%;
+        height:auto;
+    }
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: var(--HighlighColor);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(255, 0, 106);
+}
+
+.form {
+    border-radius: 5px;
+    background-color: var(--AccentColor);
+    padding: 20px;
+}
+table, td, th{
+    border:solid;
+    border-color: var(--HighlighColor);
+    border-collapse: collapse;
+}
+
+
